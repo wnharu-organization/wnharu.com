@@ -1,11 +1,13 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-lastmod: {{ .Date }}
-tags : [ "dev", "hugo", "hyde-hyde"]
-categories : [ "dev" ]
-layout: post
-type:  "post"
-highlight: false
 draft: false
+thumbnail: ""
+tags: []
+categories: []
+date: "{{ .Date }}"
+title: "{{ replace .TranslationBaseName "-" " " | title }}"
+description: ""
+outputs:
+- html
+- amp
+- json
 ---
