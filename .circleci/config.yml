@@ -6,37 +6,39 @@ jobs:
   build:
     docker:
       - image: cibuilds/hugo:0.52
-      - image: circleci/node:10.14
     working_directory: ~/hugo
     # need staging environment
     environment:
-      HUGO_BUILD_DIR: ~/hugo/public
       HUGO_ENV: production 
     steps:
-      - run: yarn install
       - run: apk update && apk add git
       - checkout
       - run: git submodule sync && git submodule update --init
-      - run: hugo -v -d $HUGO_BUILD_DIR
+      - run: hugo -v
+      - persist_to_workspace:
+          root: ~/hugo
+          paths:
+            - public
 
   deploy:
     docker:
       - image: cibuilds/aws:1.16.43
+    working_directory: ~/hugo/public
     steps:
       - attach_workspace:
-          at: ./generated-site
+          at: ~/hugo/public
       - run:
           name: Deploy to S3 if tests pass and branch is Master
-          command: aws s3 sync generated-site/docs s3://circle-production-static-site/docs/ --delete
- 
+          command: aws s3 sync public s3://wnharu.com/ --delete
+
 workflows:
   version: 2
-  build_and_test:
+  build-deploy:
     jobs:
-      - build:
-          filters:
-            branches:
-              only: master
+      - build
       - deploy:
           requires:
             - build
+          filters:
+            branches:
+              only: master
