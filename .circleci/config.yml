@@ -32,7 +32,7 @@ jobs:
           command: aws s3 sync public s3://wnharu.com/ --delete
       - run:
           name: Distribution to cloudfront
-          command: aws cloudfront create-invalidation --distribution-id EGN8TQM0WECN --paths /*
+          command: aws cloudfront create-invalidation --distribution-id EGN8TQM0WECN --paths '/*'
 
 workflows:
   version: 2
