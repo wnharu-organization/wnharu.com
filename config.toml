@@ -1,6 +1,6 @@
 baseURL                          = "https://wnharu.com/"  # Your domain name. Must end with "/"
 theme                            = "introduction"
-DefaultContentLanguage           = "jp"                    # Default language for multilingual sites
+# DefaultContentLanguage           = "jp"                    # Default language for multilingual sites
 # disqusshortname                 = ""                       # https://gohugo.io/content-management/comments
 # googleAnalytics                 = ""                       # https://gohugo.io/templates/internal/#google-analytics
 
