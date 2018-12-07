@@ -1,2 +1,8 @@
+node_modules
+.next
+.DS_Store
+out
 public
-resources
+*.log
+content/**/*.json
+package-lock.json
