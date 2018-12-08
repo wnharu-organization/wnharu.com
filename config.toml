@@ -1,25 +1,28 @@
 baseurl = "https://wnharu.com/"
-title = "hnharu's blog"
+title = "wnharu's blog"
 theme = "hugo_theme_robust"
 
-# googleAnalytics = "UA-XXXXXXXX-XX" # Optional
+# googleAnalytics = "UA-XXXXXXXX-XX"
 disqusShortname = "XYW"
 
+[blackfriday]
+  extensions = ["hardLineBreak"]
+
 [params]
-  description = "This is site description"
-  dateformat = "Jan 2, 2006" # Optional
-  # Fonts settings.
-  googlefonts = "https://fonts.googleapis.com/css?family=Lobster|Lato:400,700" # Optional, Include google fonts.
-  fontfamily = "Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif" # Optional, Override body font family.
-  logofontfamily = "Lobster, cursive" # Optional, Override logo font.
+  # description = "This is site description"
+  dateformat = "Jan 2, 2006"
+  googlefonts = "https://fonts.googleapis.com/css?family=Lobster|Lato:400,700"
+  fontfamily = "Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif"
+  logofontfamily = "Lobster, cursive"
 
 [params.author]
   thumbnail = "images/author.jpg"
-  name = "John Doe"
-  description = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p><p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
-  facebook = "https://www.facebook.com/daisuke.tsuji.735"
-  twitter = "https://twitter.com/dim0627"
-  github = "https://github.com/dim0627"
+  name = "wnharu"
+  description = "<p>フリーランスエンジニアです！！</p>"
+  # facebook = "https://www.facebook.com/wnharu"
+  twitter = "https://twitter.com/wnharu"
+  github = "https://github.com/wnharu"
 
 [outputs]
-page = [ "HTML", "AMP" ] # if you want AMP enable.
+page = [ "HTML", "AMP" ]
+

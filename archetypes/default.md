@@ -9,5 +9,4 @@ description: ""
 outputs:
 - html
 - amp
-- json
 ---
