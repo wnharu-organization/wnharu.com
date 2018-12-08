@@ -1,4 +1,5 @@
 baseurl = "https://wnharu.com/"
+languageCode = "ja"
 title = "wnharu's blog"
 theme = "hugo_theme_robust"
 
