@@ -2,7 +2,7 @@ baseurl = "https://wnharu.com/"
 title = "wnharu's blog"
 theme = "hugo_theme_robust"
 
-# googleAnalytics = "UA-XXXXXXXX-XX"
+googleAnalytics = "UA-130631884-1"
 disqusShortname = "XYW"
 
 [blackfriday]
