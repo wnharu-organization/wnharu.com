@@ -3,7 +3,7 @@ draft: false
 thumbnail: "posts/hugo-create-blog/gopher-hero.svg"
 tags: [Hugo]
 categories: []
-date: "{{ .Date }}"
+date: "2018-12-08"
 title: "Markdownでブログを書こう with Hugo"
 description: ""
 outputs:

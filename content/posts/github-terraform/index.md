@@ -3,13 +3,15 @@ draft: false
 thumbnail: "posts/github-terraform/thubnail.png"
 tags: [Hugo]
 categories: []
-date: "{{ .Date }}"
+date: "2018-12-08"
 title: "GithubのレポジトリをTerraformで管理しよう"
 description: ""
 outputs:
 - html
 - amp
 ---
+
+<!--more-->
 
 ## リポジトリを作る
 Githubに`test-organization-repositories`というリポジトリを作る前提で進めていきます。

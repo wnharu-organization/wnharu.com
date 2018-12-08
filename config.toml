@@ -11,7 +11,7 @@ disqusShortname = "XYW"
 
 [params]
   # description = "This is site description"
-  dateformat = "Jan 2, 2006"
+  dateformat = "2006年01月02日"
   googlefonts = "https://fonts.googleapis.com/css?family=Lobster|Lato:400,700"
   fontfamily = "Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif"
   logofontfamily = "Lobster, cursive"
